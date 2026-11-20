@@ -1,9 +1,9 @@
 # 20 November in one image: 40 stories, 12 panels, pinned map — world news broadsheet
 
-![make.fun](https://make.fun/badge/news-image-20261120.svg)
-![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120.svg)
-![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/rank.svg)
-![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/reward.svg)
+[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![rank](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![reward](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 
 A Node program that draws one image summing up the world's news of
 **Friday 20 November 2026** — 40 verified stories, 12 drawn panels, a
