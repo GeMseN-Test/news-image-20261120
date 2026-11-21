@@ -1,31 +1,35 @@
-# 20 November in one image: 40 stories, 12 panels, pinned map — world news broadsheet
+# Friday 20 November 2026 in one image — V2
 
-[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
-[![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
-[![rank](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
-[![reward](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![make.fun](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120)
+[![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120)
+[![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120)
+[![make.fun](https://make.fun/badge/news-image-20261120/GeMseN-Test/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120)
 
-A Node program that draws one image summing up the world's news of
-**Friday 20 November 2026** — 40 verified stories, 12 drawn panels, a
-pinned world map, a UTC timeline and a big-number strip — as a cream
-broadsheet, 1024x1024 PNG.
+Entry for the [make.fun bounty "Sum up 20 November's world news in one image"](https://make.fun/bounty/news-image-20261120) — a rebuild (V2) of the V1 entry, drawn from scratch in this session.
 
-Bounty: https://make.fun/bounty/news-image-20261120
+## What it is
 
-## Run
+One 1024×1024 broadsheet that sums up Friday 20 November 2026:
+
+- **58 stories**, every one dated Friday 20 November 2026 — 3 lead panels, 12 small panels, 43 numbered briefs
+- A big-number strip (3 Kyiv bridges · 300,000+ evacuated · Taiwan −6.2% · 100,000 youth visas · Japan 2.3% CPI · Phillips 118)
+- A UTC timeline of the day (Kyiv 00:00 → S&P 500 21:00)
+- A pinned world map ("Where it happened", pins 1–15)
+- A **DATE CHECK** box: 10 stories from Thursday 19 November left out on purpose, plus 3 "not yet happened" items
+- Every panel carries a CONFIRMED / REPORTED label and its named source
+
+## How it is made
+
+`main.ts` (Node, standard library only) draws the whole page procedurally — a hand-rolled 5×9 bitmap font, 15 mini-illustrations, a simplified world map — and writes a deterministic PNG. Two runs produce byte-identical output.
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+# -> out/entry.png (1024x1024, ≤ 1 MiB)
 ```
 
-`main.ts` (Node 22, standard library only) draws the image pixel by
-pixel at runtime: a hand-rolled PNG writer, an embedded 5x7 bitmap
-font, and vector scenes for every panel. No network at runtime, and
-two runs write byte-identical output.
-
-Every story in the image is dated 20 November 2026 and carries its
-named source; the image itself has a DATE CHECK box saying so.
+Research notes (story list with dates and sources) live in `RESEARCH.md` in the
+workspace, next to the build log `FINISH.md`.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `LICENSE`.
